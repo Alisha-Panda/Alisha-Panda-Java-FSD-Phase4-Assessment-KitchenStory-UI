@@ -69,7 +69,7 @@ export class ProductsComponent implements OnInit {
       let username = sessionStorage.getItem("username");
       if(username != null){
         this.userapiService.getUsers().subscribe((res) => {
-          const array = Object.values(res)[0];
+          const array = Object.values(res);
           for(let u in array){
             console.log("inside user array");
             if(array[u]["username"] == username ){

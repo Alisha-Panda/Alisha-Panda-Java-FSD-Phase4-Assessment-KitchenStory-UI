@@ -10,7 +10,7 @@ export class ProductapiService {
   constructor(private httpClient : HttpClient) { }
   
   public getProducts(search : string){
-    return this.httpClient.get(this.url+"/getproducts?name="+search+"&category="+search);
+    return this.httpClient.get(this.url+"/getproducts?name="+search);
   }
 
   public getProduct(id : number){

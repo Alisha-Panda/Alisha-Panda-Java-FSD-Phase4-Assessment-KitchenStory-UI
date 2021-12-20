@@ -16,8 +16,8 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="productid">Product Id</label>
-                            <input type="text" class="form-control disabled" name="productid" formControlName="productid" value="{{ productId }}"
-                                id="productid" aria-describedby="idHelp" required>
+                            <input  type="text" class="form-control" name="productid" formControlName="productid" value="{{ productId }}"
+                                id="productid" aria-describedby="idHelp" [attr.disabled] = "isDisabled">
                         </div>
                     </div>
                  </div>
@@ -26,7 +26,7 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" formControlName="name" 
+                            <input type="text" class="form-control" name="name" formControlName="name"
                                 id="name" aria-describedby="nameHelp" required>
                         </div>
                     </div>
