@@ -2,7 +2,7 @@
 FROM node:latest as builder
 WORKDIR /app
 COPY . .
-RUN npm install && npm run ng build
+RUN npm install && npm run build
 #stage 2
 FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
